@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Arturo Castillo Delgado <19@8302.net> -->
+<html>
+	<head>
+		<title>Arturo Castillo Delgado</title>
+		<meta name="description" content="Freelance Web Developer">
+		<meta name="keywords" content="freelance, web, developer, front-end, barcelona">
+		<meta charset="UTF-8">
+
+		<style>
+			body {
+				transition: color .4s;
+				-webkit-transition: color .4s;
+				-moz-transition: color .4s;
+				-o-transition: color .4s;
+			}
+		</style>
+	</head>
+
+	<body style="font-size: 130em; font-family: sans-serif; line-height: 1; margin: 0px; padding: 0px;">
+		DOWN
+
+	<script>
+	
+		(function () {
+			var down = document.body;
+
+			function range () {
+				return Math.floor(Math.random() * 255);
+			}
+
+			setInterval(function () {
+				down.style.color = 'rgb(' + range() + ',' + range() + ',' + range() + ')';
+				down.style.backgroundColor = 'rgb(' + range() + ',' + range() + ',' + range() + ')';
+			}, 400);
+		}());
+
+	</script>
+	</body>
+</html>
